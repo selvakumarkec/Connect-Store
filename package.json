@@ -11,9 +11,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b store",
-    "postbuild": "cp dist/index.html dist/404.html"
-  },
+    "deploy": "gh-pages -d dist -b store"
+    },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.10.0",
