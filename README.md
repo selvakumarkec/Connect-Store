@@ -23,30 +23,36 @@
 ## Purpose
 
 This project was developed as part of an assessment for **Connect-Store**.  
-It demonstrates a front-end application that fetches a catalog of items, lets users:
+It showcases a modern, responsive front-end application that allows users to:
 
-- 🔍 Search by title or creator
-- ⚖️ Filter by pricing options (Paid / Free / View-Only) and price range
-- 📊 Sort alphabetically or by price (low ↔ high)
-- 🔄 Infinite scroll with loading spinner
-- 🌙 Dark theme, polished UI interactions & hover animations
+-  Search items by title or creator
+-  Filter by pricing options (Paid / Free / View-Only) and adjust price ranges
+-  Sort items alphabetically or by price (low ↔ high)
+-  Experience infinite scrolling with a loading spinner
+-  Enjoy a dark theme with polished UI interactions and hover animations
+
 
 ---
 
 ## Features
 
 - **Dynamic Filtering**
-  - Toggle Paid, Free, and View-Only
-  - Dual-thumb price-range slider
+  - Toggle Paid, Free, and View-Only items
+  - Dual-thumb price-range slider for precise filtering
+
 - **Search & Sort**
-  - Debounced keyword search
+  - Debounced keyword search for optimized performance
   - Sort dropdown: Name, Highest Price, Lowest Price
+
 - **Infinite Scrolling**
-  - Auto-load more content as you scroll
+  - Automatically load more content as you scroll
+
 - **Responsive Design**
-  - 1–4 column grid on different breakpoints
+  - 1–4 column grid adapting to different screen sizes
+
 - **Dark Theme & Animations**
-  - CSS variables, hover shines, glows, and card lifts
+  - CSS variables for theming
+  - Hover effects, glows, and card lift animations for enhanced UX
 
 ---
 
