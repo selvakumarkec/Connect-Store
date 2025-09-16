@@ -1,6 +1,6 @@
 # Connect Store
 
-> A modern, responsive content marketplace to browse, filter, and sort digital assets.
+> A responsive, feature-rich marketplace for searching, filtering, and managing digital assets.
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 

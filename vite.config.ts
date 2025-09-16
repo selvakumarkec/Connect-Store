@@ -6,8 +6,9 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx']
   },
-   server: {
-    port: 3000, // 👈 Change port here
+  server: {
+    port: 3000, 
   },
+  base: "/Connect-Store/",
 });
 
