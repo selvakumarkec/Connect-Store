@@ -1,0 +1,107 @@
+/*————————————————————————————————————————————————————————————————————————————
+    Category Tabs & Underline Hover
+  ————————————————————————————————————————————————————————————————————————————*/
+.categories {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 auto 24px;
+}
+
+.cat-tab {
+    position: relative;
+    overflow: hidden;
+    background: var(--card);
+    color: var(--fg);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.cat-tab::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.cat-tab:hover {
+    color: var(--accent);
+}
+
+.cat-tab:hover::after {
+    width: 100%;
+}
+
+.cat-tab--active {
+    background: var(--fg);
+    color: var(--bg);
+    font-weight: 600;
+}
+
+/*————————————————————————————————————————————————————————————————————————————
+    Search Section
+  ————————————————————————————————————————————————————————————————————————————*/
+.search-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*————————————————————————————————————————————————————————————————————————————
+    Filter Section
+  ————————————————————————————————————————————————————————————————————————————*/
+.filter-section {
+    background: var(--card);
+    margin-bottom: 24px;
+    padding-left : 24px;
+    padding-right : 24px;
+    background-color: #0e0e13;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+/*————————————————————————————————————————————————————————————————————————————
+    Sort Dropdown
+  ————————————————————————————————————————————————————————————————————————————*/
+
+.sort-dropdown-container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.sort-label {
+    margin-right: 8px;
+    font-size: 0.875rem;
+    color: var(--fg);
+}
+
+.sort-dropdown {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    background: var(--card-bg);
+    color: var(--fg);
+    border: 1px solid var(--muted);
+    border-radius: 4px;
+}
+
+/*————————————————————————————————————————————————————————————————————————————
+    Content Grid Section
+  ————————————————————————————————————————————————————————————————————————————*/
+.grid-section {
+    margin-bottom: 48px;
+}

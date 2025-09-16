@@ -1,0 +1,93 @@
+.skeleton-card {
+  width: 394px;
+  height: 366px;
+  background: var(--card-bg, #1e1e1e);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Image placeholder (fixed height) */
+.skeleton-card__img {
+  width: 100%;
+  height: 295px;
+  background: var(--skeleton-bg, #2c2c2c);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Body (fixed height) */
+.skeleton-card__body {
+  height: 42px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Text group (creator + title) */
+.skeleton-card__text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Skeleton lines */
+.skeleton-card__line {
+  height: 10px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #2c2c2c 25%,
+    #3a3a3a 50%,
+    #2c2c2c 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+.skeleton-card__line.short {
+  width: 50px;
+}
+
+.skeleton-card__line.medium {
+  width: 100px;
+}
+
+/* Price placeholder */
+.skeleton-card__price {
+  width: 60px;
+  height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #2c2c2c 25%,
+    #3a3a3a 50%,
+    #2c2c2c 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Subtle pulsing */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  }
+}
